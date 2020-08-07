@@ -26,7 +26,10 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              // "src/assets/dsgov.js",
+              "src/app/dsgov.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -119,6 +122,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "ngdsgov"
+    }
+  },
+  "defaultProject": "ngdsgov",
+  "cli": {
+    "analytics": false
+  }
 }

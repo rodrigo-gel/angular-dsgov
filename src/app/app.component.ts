@@ -7,4 +7,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ngdsgov';
+
+  constructor(){
+   this.carregarScript();
+  }
+
+  carregarScript(){
+    const node = document.createElement('script'); 
+    node.src = "./assets/dsgov.js";
+    node.type = 'text/javascript'; 
+    node.async = false; 
+    document.getElementsByTagName('body')[0].appendChild(node); 
+  }
 }
+
